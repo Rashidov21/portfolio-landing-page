@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Mukta:wght@700&family=Varela+Round&display=swap');
+body {
+    font-family: 'Varela Round', sans-serif;
+    background: rgb(38, 38, 38);
+    background: linear-gradient(79deg, rgba(38, 38, 38, 1) 0%, rgba(33, 33, 33, 1) 97%);
+}
+
+.my-bg {
+    background: rgb(69, 32, 32);
+    background: linear-gradient(79deg, rgba(69, 32, 32, 1) 0%, rgba(33, 33, 33, 1) 97%);
+}
+
+.brand-logo {
+    margin-top: 10px;
+}
+
+h2,
+h5 {
+    background: rgb(220, 235, 32);
+    background: linear-gradient(79deg, rgba(220, 235, 32, 1) 0%, rgba(157, 6, 6, 1) 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-gr {
+    background: rgb(220, 235, 32);
+    background: linear-gradient(79deg, rgba(220, 235, 32, 1) 0%, rgba(157, 6, 6, 1) 97%);
+}
+
+.img-rotate {
+    background-image: url("../man.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 20px;
+    background-color: #26a69a;
+    z-index: 999;
+    width: 300px;
+    height: 300px;
+    float: right;
+    box-shadow: 0px 2px 3px red;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.sidenav-trigger {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+.grid-item {
+    width: 25%;
+}
+
+.grid-item--width2 {
+    width: 400px;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+    .img-rotate {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
